@@ -9,6 +9,15 @@
   - Emerald Green (#10B981)
 */
 
+:root {
+  --deep-blue: #1E3A8A;
+  --soft-white: #F9FAFB;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .custom-header {
   background-color: #1E3A8A;
   font-size: 20px;
@@ -27,7 +36,6 @@
 .intro {
   background-color: #1E3A8A;
   color: #F9FAFB;
-  font-family: "Montserrat", sans-serif;
   padding-top: 100px;
   padding-bottom: 100px;
   margin-bottom: 100px;
@@ -48,4 +56,13 @@
   --bs-btn-hover-bg: #0b5ed7;
   --bs-btn-active-bg: #4f92f6;
   --bs-btn-active-border-color: #4f92f6;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.btn-projects {
+  color: var(--soft-white);
+  background-color: #1E3A8A;
 }
