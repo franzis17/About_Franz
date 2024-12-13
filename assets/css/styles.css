@@ -21,7 +21,6 @@ body {
 .custom-header {
   background-color: #1E3A8A;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
@@ -64,5 +63,7 @@ body {
 
 .btn-projects {
   color: var(--soft-white);
-  background-color: #1E3A8A;
+  background-color: var(--deep-blue);
+  --bs-btn-hover-bg: #586faf;
+  --bs-btn-active-bg: #718ace;
 }
