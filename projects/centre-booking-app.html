@@ -12,7 +12,7 @@
 
 <body class="projects">
   <!-- Header -->
-  <div class="custom-header container-fluid">
+  <!-- <div class="custom-header container-fluid">
     <nav class="navbar navbar-expand-lg py-0">
       <div class="custom-header container py-3">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,11 @@
         </div>
       </div>
     </nav>
-  </div>
+  </div> -->
+  
+  <!-- Header (Reused - See script) -->
+  <div id="header"></div>
+  
   <!-- Breadcrumb -->
   <div class="container my-5">
     <nav aria-label="breadcrumb">
@@ -75,7 +79,17 @@
     </div>
   </div>
   
+
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    // Get Bootstrap Script
+  </script>
+  <script>
+    // Get Header component
+    document.getElementById("header").innerHTML = 
+      fetch('../components/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
 </body>
 </html>

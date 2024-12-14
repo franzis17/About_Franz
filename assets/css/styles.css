@@ -63,6 +63,10 @@ body {
   font-weight: bold;
 }
 
+.card-thumbnail {
+  background-color: black;
+}
+
 .btn-projects {
   color: var(--soft-white);
   background-color: var(--deep-blue);
