@@ -9,11 +9,65 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
-<body id="moving-service">
-  <section class="description">
-    <div class="container">
-      
+
+<body id="moving-service" class="projects">
+  <section class="header">
+    <!-- Header (Reused - See script) -->
+    <div id="header"></div>
+    
+    <!-- Breadcrumb -->
+    <div class="container my-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
+          <li class="breadcrumb-item">
+            <a class="link-body-emphasis" href="../index.html">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.849,7.681l-.886-.693h.037V1.987h-2v3.464L13.849,.638c-1.088-.854-2.609-.854-3.697,0L1.151,7.68c-.731,.573-1.151,1.435-1.151,2.363v13.957H24V10.043c0-.929-.42-1.79-1.151-2.362Z"/></svg>
+              <span class="visually-hidden">Home</span>
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="link-body-emphasis fw-semibold text-decoration-none" href="./projects-list.html">Projects</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Centre Booking App
+          </li>
+        </ol>
+      </nav>
     </div>
   </section>
+  
+  <section class="description">
+    <div class="container">
+      <h1>Moving Service Website</h1>
+      <img src="../assets/images/projects/moving_service-homepage.png" alt="Moving Service Homepage" width="100%">
+      <div class="btn-container">
+        <a
+          class="btn btn-primary btn-lg px-4"
+          href="https://www.comfortperthremovals.com.au"
+          target="_blank"
+        >Visit Site</a>
+      </div>
+      <div class="why">
+        <h2>Why make the website?</h2>
+        <!-- !@ Add description -->
+        <p>
+          Client wanted a website as soon as possible for their removalist business. Gathered requirements
+          from the Client such as design ideas, how they want the brand to look, and what functionalities
+          they would need/want.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Scripts -->
+  
+  <!-- Get Header Component -->
+  <script>
+    document.getElementById("header").innerHTML = 
+      fetch('../components/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
 </body>
 </html>
