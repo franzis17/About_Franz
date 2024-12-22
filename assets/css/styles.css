@@ -130,3 +130,11 @@ body {
   align-items: center;
   margin-bottom: 50px;
 }
+
+.projects .footer {
+  margin-top: 200px;
+}
+
+.footer img {
+  margin-bottom: 0px;
+}
