@@ -107,16 +107,20 @@ body {
 /* Projects */
 .projects h1 {
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .projects h2 {
-  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .projects p {
   font-size: 17px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.projects .key-terms ul {
+  margin-top: 20px;
 }
 
 .projects img {
