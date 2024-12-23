@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Credit Assessment System</title>
+</head>
+<body id="student-crl" class="projects">
+  <section class="header">
+    <!-- Header (Reused - See script) -->
+    <div id="header"></div>
+    
+    <!-- Breadcrumb -->
+    <div class="container my-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
+          <li class="breadcrumb-item">
+            <a class="link-body-emphasis" href="../index.html">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.849,7.681l-.886-.693h.037V1.987h-2v3.464L13.849,.638c-1.088-.854-2.609-.854-3.697,0L1.151,7.68c-.731,.573-1.151,1.435-1.151,2.363v13.957H24V10.043c0-.929-.42-1.79-1.151-2.362Z"/></svg>
+              <span class="visually-hidden">Home</span>
+            </a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="link-body-emphasis fw-semibold text-decoration-none" href="./projects-list.html">Projects</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Student Credit Assessment System
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  
+  <!-- !@ Add section: description -->
+   
+  <!-- !@ Add section: footer -->
+  
+  
+  <!-- Scripts -->
+  
+  <!-- Get Header Component -->
+  <script>
+    document.getElementById("header").innerHTML = 
+      fetch('../components/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+</body>
+</html>
