@@ -13,7 +13,8 @@
 <body id="moving-service" class="projects">
   <section class="header">
     <!-- Header (Reused - See script) -->
-    <div id="header"></div>
+    <div id="header">
+    </div>
     
     <!-- Breadcrumb -->
     <div class="container my-5">
@@ -79,21 +80,10 @@
     </div>
   </section>
   
+  <!-- Footer (Reused - See script) -->
   <section class="footer">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="container d-flex flex-wrap justify-content-between align-items-center">
-        <p class="col-md-4 mb-0 text-body-secondary">© 2024 Franz Labrador</p>
-        <a href="/">
-          <img src="../assets/icons/house-fill.svg" alt="redirect to homepage icon" width="30" height="30">
-        </a>
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Work</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Life</a></li>
-        </ul>
-      </div>
-    </footer>
+    <div id="footer">
+    </div>
   </section>
   
 
@@ -105,6 +95,14 @@
       fetch('../components/header.html')
       .then(response => response.text())
       .then(data => document.getElementById("header").innerHTML = data);
+  </script>
+  
+  <!-- Get Footer Component -->
+  <script>
+    document.getElementById("footer").innerHTML = 
+      fetch('../components/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById("footer").innerHTML = data);
   </script>
 </body>
 </html>
